@@ -1,0 +1,21 @@
+// breadcrumbs
+.bc-nav {
+    ol {
+        li {
+            font-size: .8em !important;
+            color: #bf9332 !important;
+            text-transform: uppercase;
+            font-weight: 500;
+            &:before {
+                color: #333 !important;
+            }
+            a {
+                color: #333 !important;
+            }
+        }
+    }
+}
+
+.text-black {
+    color: #333 !important;
+}

@@ -1,0 +1,35 @@
+// footer
+footer {
+    .copyrights {
+        font-size: .8em !important;
+        span {
+            color: #999 !important;
+        }
+    }
+}
+
+ul {
+    .list-item {
+        .list-links {
+            color: #999 !important;
+        }
+        &:hover {
+            .list-links {
+                color: #bf9332 !important;
+            }
+        }
+    }
+}
+
+.footer-menu {
+    font-size: .8em !important;
+    color: #999;
+    h6 {
+        font-size: .9em !important;
+    }
+}
+
+.legal-text {
+    font-size: .8em !important;
+    color: #999;
+}

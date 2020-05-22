@@ -1,0 +1,17 @@
+// navbar style
+.navbar-nav {
+    li {
+        a {
+            font-size: .7em;
+            font-weight: 500;
+        }
+    }
+}
+
+.navbar-nav {
+    li.active {
+        a {
+            color: #bf9332 !important;
+        }
+    }
+}

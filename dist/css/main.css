@@ -9,11 +9,9 @@ body {
   border: 0;
   font-size: 1em !important;
   font: inherit;
-  vertical-align: baseline;
   box-sizing: border-box;
-  overflow-x: hidden;
   width: 100%;
-  height: 100%; }
+  overflow-x: hidden; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -124,3 +122,63 @@ ul .list-item:hover .list-links {
   background-color: transparent !important;
   font-weight: bold;
   color: #bf9332 !important; }
+
+img {
+  vertical-align: middle; }
+
+/* Position the image container (needed to position the left and right arrows) */
+.prod-slide-wrap {
+  position: relative; }
+
+/* Hide the images by default */
+.prod-slides {
+  display: none; }
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Container for image text */
+.prod-row-tab:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Six columns side by side */
+.prod-col-tab {
+  float: left;
+  width: 16.66%; }
+
+/* Add a transparency effect for thumnbail images */
+.prod-img-thumb {
+  opacity: 0.6; }
+
+.active,
+.prod-img-thumb:hover {
+  opacity: 1; }

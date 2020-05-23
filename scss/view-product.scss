@@ -14,3 +14,137 @@
         }
     }
 }
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.prod-slide-wrap {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.prod-slides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Container for image text */
+
+.prod-row-tab:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.prod-col-tab {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.prod-img-thumb {
+    opacity: 0.6;
+}
+
+.active,
+.prod-img-thumb:hover {
+    opacity: 1;
+}
+
+// QUANTITY
+.handle-counter {
+    overflow: hidden;
+}
+
+.handle-counter .counter-minus,
+.handle-counter .counter-plus,
+.handle-counter input {
+    float: left;
+    text-align: center;
+}
+
+.handle-counter .counter-minus,
+.handle-counter .counter-plus {
+    text-align: center;
+}
+
+.handle-counter input {
+    width: 50px;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+}
+
+.qty-btn {
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.qty-btn:disabled,
+.qty-btn:disabled:hover {
+    background-color: darkgrey;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background-color: #009dda;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0486b9;
+}

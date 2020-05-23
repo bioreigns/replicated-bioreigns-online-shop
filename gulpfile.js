@@ -15,5 +15,18 @@ function style() {
 }
 
 
+function watch() {
+    browserSync.init({
+        server: {
+            baseDir: './'
+        }
+    });
+
+    gulp.watch('./scss/main.scss');
+    gulp.watch('./*.html').on('change', browserSync.reload);
+    gulp.watch('./dist/js/main.js').on('change', browserSync.reload);
+}
+
 
 exports.style = style;
+exports.watch = watch;
